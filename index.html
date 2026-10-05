@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>大肥鱼骑自行车 🐟🚲</title>
+<title>大肥鱼猫娘骑自行车 🐟🚲</title>
 <style>
   :root {
     --sky-top: #7ec8ff;
     --sky-bottom: #dff3ff;
-    --sea: #3fa7e6;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { height: 100%; }
@@ -28,7 +27,7 @@
     z-index: 2;
   }
   header h1 {
-    font-size: clamp(28px, 6vw, 52px);
+    font-size: clamp(26px, 6vw, 50px);
     color: #fff;
     text-shadow: 0 3px 0 #1e7fd0, 0 6px 14px rgba(0,0,0,0.25);
     letter-spacing: 2px;
@@ -56,15 +55,15 @@
   /* ---------- 动画 ---------- */
   @keyframes bob {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-8px); }
   }
-  @keyframes tailWag {
-    0%, 100% { transform: rotate(-8deg); }
-    50% { transform: rotate(10deg); }
+  @keyframes tailSway {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(6deg); }
   }
-  @keyframes finWave {
-    0%, 100% { transform: rotate(-6deg); }
-    50% { transform: rotate(8deg); }
+  @keyframes earWig {
+    0%, 100% { transform: rotate(-4deg); }
+    50% { transform: rotate(4deg); }
   }
   @keyframes spin {
     to { transform: rotate(360deg); }
@@ -89,9 +88,12 @@
     0%, 90%, 100% { transform: scaleY(1); }
     94% { transform: scaleY(0.1); }
   }
+
   .bike-group { animation: bob 1.6s ease-in-out infinite; }
-  .fish-tail { animation: tailWag 0.9s ease-in-out infinite; transform-origin: 300px 300px; }
-  .fish-fin { animation: finWave 1.1s ease-in-out infinite; transform-origin: 470px 300px; }
+  .twintail-left { animation: tailSway 1.1s ease-in-out infinite; transform-origin: 300px 190px; }
+  .twintail-right { animation: tailSway 1.1s ease-in-out infinite; animation-delay: 0.15s; transform-origin: 410px 190px; }
+  .ear-left { animation: earWig 0.9s ease-in-out infinite; transform-origin: 332px 128px; }
+  .ear-right { animation: earWig 0.9s ease-in-out infinite; animation-delay: 0.2s; transform-origin: 378px 128px; }
   .wheel-rear, .wheel-front { transform-box: fill-box; transform-origin: center; animation: spin 1.2s linear infinite; }
   .spokes-rear, .spokes-front { transform-box: fill-box; transform-origin: center; animation: spin 1.2s linear infinite; }
   .pedals { transform-box: fill-box; transform-origin: center; animation: pedal 1.2s linear infinite; }
@@ -117,24 +119,24 @@
 </head>
 <body>
   <header>
-    <h1>🐟 大肥鱼骑自行车 🚲</h1>
-    <p>蓝色大肥鱼 · 一路蹬蹬蹬 · 咕噜咕噜</p>
+    <h1>🐟 大肥鱼猫娘骑自行车 🚲</h1>
+    <p>蓝色猫娘 · 一路蹬蹬蹬 · 咕噜咕噜</p>
   </header>
 
   <div class="stage">
-    <svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="一只蓝色大肥鱼骑着自行车">
+    <svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="一只蓝色猫娘骑着自行车">
       <defs>
         <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#8fd0ff"/>
           <stop offset="1" stop-color="#e4f6ff"/>
         </linearGradient>
-        <linearGradient id="fishBody" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#59b7ff"/>
+        <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#63bcff"/>
           <stop offset="1" stop-color="#2f8fe8"/>
         </linearGradient>
-        <linearGradient id="fishBelly" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#dff1ff"/>
-          <stop offset="1" stop-color="#b8dfff"/>
+        <linearGradient id="hairDark" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3f9fe8"/>
+          <stop offset="1" stop-color="#1e6fc0"/>
         </linearGradient>
         <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
           <stop offset="0" stop-color="#fff3b0"/>
@@ -209,7 +211,7 @@
         <circle class="bubble b4" cx="595" cy="335" r="7"/>
       </g>
 
-      <!-- ============ 自行车 + 大肥鱼 ============ -->
+      <!-- ============ 自行车 + 猫娘 ============ -->
       <g class="bike-group" transform="translate(0, 0)" filter="url(#softShadow)">
 
         <!-- 后轮 -->
@@ -240,17 +242,11 @@
 
         <!-- 车架 -->
         <g stroke="#3a4a9c" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <!-- 后轴到中轴 -->
           <path d="M 300 400 L 400 400"/>
-          <!-- 中轴到后座 -->
           <path d="M 400 400 L 340 330"/>
-          <!-- 后座到后轴 -->
           <path d="M 340 330 L 300 400"/>
-          <!-- 中轴到前叉上端 -->
           <path d="M 400 400 L 470 330"/>
-          <!-- 前叉 -->
           <path d="M 470 330 L 530 400"/>
-          <!-- 前叉到中轴 -->
           <path d="M 530 400 L 400 400"/>
         </g>
 
@@ -278,40 +274,91 @@
           <circle r="9" fill="#ff9d3f" stroke="#2b2b33" stroke-width="3"/>
         </g>
 
-        <!-- ============ 大肥鱼 ============ -->
-        <!-- 身体 -->
-        <g transform="translate(370, 300)">
-          <ellipse cx="0" cy="0" rx="85" ry="72" fill="url(#fishBody)" stroke="#1e6fc0" stroke-width="4"/>
-          <!-- 肚子 -->
-          <ellipse cx="6" cy="26" rx="58" ry="42" fill="url(#fishBelly)"/>
-          <!-- 鱼鳞纹 -->
-          <g stroke="#3f9fe8" stroke-width="2.5" fill="none" opacity="0.5">
-            <path d="M -40 -20 q 20 -14 40 0"/>
-            <path d="M -50 4 q 22 -14 44 0"/>
-            <path d="M -44 28 q 22 -12 44 0"/>
+        <!-- ============ 猫娘角色 ============ -->
+        <!-- 双腿（在身体之后绘制，避免被裙子遮住顺序问题；这里放在身体前面，因为腿在前侧） -->
+        <!-- 右腿（近侧） -->
+        <g stroke="#2b2b33" stroke-width="1.5">
+          <path d="M 352 322 Q 366 350 390 372 L 398 428" fill="none" stroke="#ffcfb0" stroke-width="11" stroke-linecap="round"/>
+        </g>
+        <!-- 右鞋 -->
+        <ellipse cx="400" cy="432" rx="14" ry="9" fill="#ff9d3f" stroke="#2b2b33" stroke-width="2"/>
+        <!-- 左腿（远侧，稍淡） -->
+        <path d="M 336 322 Q 344 344 356 358 L 362 368" fill="none" stroke="#eab69a" stroke-width="11" stroke-linecap="round"/>
+        <ellipse cx="363" cy="370" rx="13" ry="8" fill="#e88a2f" stroke="#2b2b33" stroke-width="2"/>
+
+        <!-- 身体 / 连衣裙 -->
+        <g>
+          <!-- 后背 -->
+          <path d="M 320 300 Q 310 250 332 232 L 372 232 Q 396 250 390 300 Q 386 326 352 328 Q 320 326 320 300 Z" fill="#3f9fe8" stroke="#1e6fc0" stroke-width="3"/>
+          <!-- 白色水手领 -->
+          <path d="M 326 236 L 352 226 L 378 236 L 372 262 L 352 270 L 332 262 Z" fill="#ffffff" stroke="#d7ecff" stroke-width="2"/>
+          <!-- 蝴蝶结 -->
+          <g transform="translate(352, 238)">
+            <path d="M 0 0 L -14 -9 L -14 9 Z" fill="#ff7eb0"/>
+            <path d="M 0 0 L 14 -9 L 14 9 Z" fill="#ff7eb0"/>
+            <circle r="4" fill="#ff9ebf"/>
           </g>
-          <!-- 背鳍 -->
-          <path d="M -28 -66 Q -8 -108 22 -66 Z" fill="#3f9fe8" stroke="#1e6fc0" stroke-width="4"/>
+          <!-- 裙摆 -->
+          <path d="M 320 300 Q 322 334 352 338 Q 386 334 390 300 Q 372 330 352 330 Q 334 330 320 300 Z" fill="#3f9fe8" stroke="#1e6fc0" stroke-width="3"/>
+          <!-- 手臂（近侧）伸向车把 -->
+          <path d="M 372 250 Q 430 268 496 306" fill="none" stroke="#ffcfb0" stroke-width="10" stroke-linecap="round"/>
+          <circle cx="500" cy="310" r="7" fill="#ffcfb0" stroke="#2b2b33" stroke-width="1.5"/>
+          <!-- 手臂（远侧） -->
+          <path d="M 334 248 Q 400 262 486 300" fill="none" stroke="#eab69a" stroke-width="10" stroke-linecap="round"/>
+          <circle cx="492" cy="304" r="6" fill="#eab69a" stroke="#2b2b33" stroke-width="1.5"/>
+        </g>
+
+        <!-- 头 -->
+        <g transform="translate(352, 168)">
+          <!-- 双马尾（脑后左右两侧） -->
+          <g class="twintail-left">
+            <path d="M -40 -8 Q -84 -30 -78 10 Q -74 44 -58 56 Q -42 60 -30 30 Z" fill="url(#hairDark)" stroke="#1e6fc0" stroke-width="3"/>
+            <!-- 鲸鱼尾鳍发饰 -->
+            <path d="M -78 10 Q -96 4 -104 12 Q -96 22 -78 18 Z" fill="#63bcff" stroke="#1e6fc0" stroke-width="3"/>
+          </g>
+          <g class="twintail-right">
+            <path d="M 40 -8 Q 84 -30 78 10 Q 74 44 58 56 Q 42 60 30 30 Z" fill="url(#hairDark)" stroke="#1e6fc0" stroke-width="3"/>
+            <path d="M 78 10 Q 96 4 104 12 Q 96 22 78 18 Z" fill="#63bcff" stroke="#1e6fc0" stroke-width="3"/>
+          </g>
+
+          <!-- 后发 -->
+          <circle cx="0" cy="0" r="46" fill="url(#hairDark)"/>
+
+          <!-- 猫耳 -->
+          <g class="ear-left">
+            <path d="M -30 -26 L -26 -58 L -2 -32 Z" fill="#3f9fe8" stroke="#1e6fc0" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M -25 -32 L -22 -50 L -8 -34 Z" fill="#ffb6d0"/>
+          </g>
+          <g class="ear-right">
+            <path d="M 30 -26 L 26 -58 L 2 -32 Z" fill="#3f9fe8" stroke="#1e6fc0" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M 25 -32 L 22 -50 L 8 -34 Z" fill="#ffb6d0"/>
+          </g>
+
+          <!-- 脸 -->
+          <circle cx="0" cy="0" r="42" fill="#ffe6d5" stroke="#e8b79a" stroke-width="2"/>
+
+          <!-- 刘海 -->
+          <path d="M -42 -2 Q -40 -30 -20 -34 Q -6 -40 2 -34 Q 20 -40 40 -32 Q 42 -12 42 0 Q 30 -14 16 -10 Q 2 -16 -14 -10 Q -30 -14 -42 -2 Z" fill="url(#hair)" stroke="#1e6fc0" stroke-width="2.5"/>
+
           <!-- 眼睛 -->
           <g class="eye">
-            <circle cx="38" cy="-18" r="17" fill="#ffffff" stroke="#1e6fc0" stroke-width="3"/>
-            <circle cx="42" cy="-18" r="9" fill="#1a1a24"/>
-            <circle cx="45" cy="-21" r="3.5" fill="#ffffff"/>
+            <ellipse cx="-15" cy="4" rx="10" ry="13" fill="#24365f" stroke="#12203f" stroke-width="1.5"/>
+            <ellipse cx="15" cy="4" rx="10" ry="13" fill="#24365f" stroke="#12203f" stroke-width="1.5"/>
+            <circle cx="-12" cy="0" r="4" fill="#ffffff"/>
+            <circle cx="18" cy="0" r="4" fill="#ffffff"/>
+            <circle cx="-17" cy="8" r="1.8" fill="#ffffff" opacity="0.85"/>
+            <circle cx="13" cy="8" r="1.8" fill="#ffffff" opacity="0.85"/>
+            <!-- 睫毛 -->
+            <path d="M -25 -2 L -28 -7" stroke="#12203f" stroke-width="2" stroke-linecap="round"/>
+            <path d="M 25 -2 L 28 -7" stroke="#12203f" stroke-width="2" stroke-linecap="round"/>
           </g>
+
           <!-- 腮红 -->
-          <ellipse cx="50" cy="8" rx="11" ry="8" fill="#ff8fb1" opacity="0.75"/>
-          <!-- 嘴巴 -->
-          <path d="M 60 -2 q 14 10 2 18" stroke="#1e6fc0" stroke-width="4" fill="none" stroke-linecap="round"/>
-        </g>
+          <ellipse cx="-26" cy="16" rx="8" ry="5" fill="#ff9eb5" opacity="0.7"/>
+          <ellipse cx="26" cy="16" rx="8" ry="5" fill="#ff9eb5" opacity="0.7"/>
 
-        <!-- 尾巴（后侧摆动） -->
-        <g class="fish-tail" transform="translate(285, 300)">
-          <path d="M 0 -6 Q -40 -58 -70 -40 Q -52 0 -34 6 Q -52 44 -70 44 Q -40 60 0 6 Z" fill="#3f9fe8" stroke="#1e6fc0" stroke-width="4"/>
-        </g>
-
-        <!-- 胸鳍（扶车把） -->
-        <g class="fish-fin" transform="translate(470, 300)">
-          <path d="M 0 0 Q 26 -10 44 6 Q 22 22 0 10 Z" fill="#3f9fe8" stroke="#1e6fc0" stroke-width="3.5"/>
+          <!-- 嘴 -->
+          <path d="M -5 22 Q 0 27 5 22" stroke="#c2685a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
         </g>
 
       </g>
@@ -319,11 +366,10 @@
   </div>
 
   <footer>
-    点击画面可以让大肥鱼加速冲鸭 🐟💨
+    点击画面可以让猫娘加速冲鸭 🐟💨
   </footer>
 
   <script>
-    // 小彩蛋：点击画面让鱼加速
     const stage = document.querySelector('.stage');
     const wheels = document.querySelectorAll('.wheel-rear, .wheel-front, .spokes-rear, .spokes-front, .pedals');
     let fast = false;
@@ -333,7 +379,7 @@
     stage.addEventListener('click', () => {
       fast = !fast;
       setSpeed(fast ? '0.35s' : '1.2s');
-      document.title = fast ? '冲鸭！大肥鱼！🐟💨' : '大肥鱼骑自行车 🐟🚲';
+      document.title = fast ? '冲鸭！猫娘！🐟💨' : '大肥鱼猫娘骑自行车 🐟🚲';
     });
   </script>
 </body>
