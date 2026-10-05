@@ -21,10 +21,22 @@
 
 ## 🐟 原始素材
 
-| 素材 | 预览 |
-| --- | --- |
-| DeepSeek 蓝色大肥鲸 | <img src="./assets/DeepSeek.蓝色大肥鲸.大肥鱼猫娘.哦鲸鲸....png" width="160" alt="DeepSeek 蓝色大肥鲸" /> |
-| 大肥鱼原神 | <img src="./assets/大肥鱼原神.jpg" width="160" alt="大肥鱼原神" /> |
-| 大肥鱼摸摸肚子 | <img src="./assets/大肥鱼摸摸肚子.jpg" width="160" alt="大肥鱼摸摸肚子" /> |
-| 大肥鱼特别充值通道 | <img src="./assets/大肥鱼特别充值通道.jpg" width="160" alt="大肥鱼特别充值通道" /> |
-| 大肥鱼看电脑 | <img src="./assets/大肥鱼看电脑.jpg" width="160" alt="大肥鱼看电脑" /> |
+### DeepSeek 蓝色大肥鲸
+
+<img src="./assets/DeepSeek.蓝色大肥鲸.大肥鱼猫娘.哦鲸鲸....png" alt="DeepSeek 蓝色大肥鲸" width="100%" />
+
+### 大肥鱼原神
+
+<img src="./assets/大肥鱼原神.jpg" alt="大肥鱼原神" width="100%" />
+
+### 大肥鱼摸摸肚子
+
+<img src="./assets/大肥鱼摸摸肚子.jpg" alt="大肥鱼摸摸肚子" width="100%" />
+
+### 大肥鱼特别充值通道
+
+<img src="./assets/大肥鱼特别充值通道.jpg" alt="大肥鱼特别充值通道" width="100%" />
+
+### 大肥鱼看电脑
+
+<img src="./assets/大肥鱼看电脑.jpg" alt="大肥鱼看电脑" width="100%" />
