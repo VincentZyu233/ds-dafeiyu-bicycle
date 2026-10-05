@@ -4,10 +4,25 @@
 
 ## 📸 网页截图
 
-<!-- SCREENSHOT-START -->
-<!-- 截图占位：等作者截图后，把图片放进 assets 目录，再把下面这行替换为实际 <img> -->
-> _截图待补充_
-<!-- SCREENSHOT-END -->
+<img src="./assets/screenshots/v4-scene.png" alt="鲸鱼女仆·海边场景" width="100%" />
+
+## 🕰️ 版本演进
+
+### v1 · 蓝色大肥鱼
+
+<img src="./assets/screenshots/v1-fish.png" alt="蓝色大肥鱼" width="100%" />
+
+### v2 · 大肥鱼猫娘
+
+<img src="./assets/screenshots/v2-catgirl.png" alt="大肥鱼猫娘" width="100%" />
+
+### v3 · 蓝发鲸鱼女仆
+
+<img src="./assets/screenshots/v3-whale-maid.png" alt="蓝发鲸鱼女仆" width="100%" />
+
+### v4 · 鲸鱼女仆·海边场景
+
+<img src="./assets/screenshots/v4-scene.png" alt="鲸鱼女仆·海边场景" width="100%" />
 
 ## 🚀 在线预览
 

@@ -1,0 +1,8 @@
+[project]
+name = "dafeiyu-screenshot"
+version = "0.1.0"
+description = "截图鲸鱼女仆骑自行车网页的历史版本"
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.40",
+]
