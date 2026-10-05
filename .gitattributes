@@ -1,0 +1,2 @@
+# 让所有 Markdown 文件计入语言统计（默认 README 会被识别为 documentation 而排除）
+*.md linguist-detectable=true linguist-documentation=false

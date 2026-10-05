@@ -9,7 +9,7 @@ import sys
 
 from playwright.sync_api import sync_playwright
 
-REPO = pathlib.Path(__file__).resolve().parent
+REPO = pathlib.Path(__file__).resolve().parent.parent
 OUT = REPO / "assets" / "screenshots"
 OUT.mkdir(parents=True, exist_ok=True)
 

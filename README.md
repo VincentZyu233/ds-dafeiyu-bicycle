@@ -38,6 +38,22 @@
 - 车轮旋转、脚踏蹬动、鲸鱼尾巴摆动、鲸鱼鳍耳抖动、长发飘动、身体起伏、气泡上浮、云朵飘动
 - 点击画面可以让鲸鱼娘加速「冲鸭」🐳💨
 
+## 🖥️ 截图脚本
+
+本仓库带一个自动化截图脚本，用 Playwright + 本机 Chrome/Edge 对网页的历史版本截图，产物输出到 `assets/screenshots/`。
+
+```bash
+# 安装依赖（仅首次需要）
+uv pip install playwright
+
+# 运行截图
+uv run scripts/screenshot.py
+```
+
+> 也可以一条命令搞定：`uv run --with playwright scripts/screenshot.py`
+
+- 脚本内 `VERSIONS` 列表定义了要截图的 git commit 与对应标签，可按需增删
+
 ## 🐟 原始素材
 
 ### DeepSeek 蓝色大肥鲸
